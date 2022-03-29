@@ -1,3 +1,11 @@
 <div class="skills-wrap bg-gray">
-<h2>MY SKILLS</h2>
+  <h2>My Skills</h2>
+  <div class="skills-container">
+    <div *ngFor="let skill of skills; let i = index" class="skill-div">
+      <div class="icon-container">
+        <img src="{{ skill.icon }}" class="icon" />
+      </div>
+      <span class="title"> {{ skill["title"] }}</span>
+    </div>
+  </div>
 </div>

@@ -1,42 +1,35 @@
-.slideshow-container{
+.slideshow-container {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   overflow: hidden;
-  z-index: 0;
+  z-index: -1;
 }
-.slideshow-img{
-  height: 100vh;
+.slideshow-img {
   width: 100vw;
   max-width: 100%;
   object-fit: cover;
   animation: zoomIn 10s ease infinite;
 }
 
-.slideshow-overlay{
+.slideshow-overlay {
   position: absolute;
   top: 0;
   display: flex;
   align-items: center;
-  padding: 0 120px;
+  padding: 0 7.5rem;
 
-  p{
+  p {
     display: inline;
-  }
-  h1{
-    color: white;
-    font-size: 64px;
   }
 }
 
 @keyframes zoomIn {
-  from{
+  from {
     transform: scale(1);
   }
-  to{
+  to {
     transform: scale(1.1);
   }
 }
-
-
