@@ -1,28 +1,19 @@
 <div class="my-work-wrap">
-  <h2>My Work</h2>
-  <div class="button-bar">
+  <h2 data-aos="fade-right">My Work</h2>
+  <div data-aos="zoom-out-up" class="button-bar">
     <button class="from-center" mat-stroked-button>All</button>
     <button class="from-center" mat-stroked-button>Angular</button>
     <button class="from-center" mat-stroked-button>Java Script</button>
   </div>
   <div class="my-work-container">
-    <div class="my-work-div">
-      <img src="assets/img/sharky.png" />
-    </div>
-    <div class="my-work-div">
-      <img src="assets/img/sharky.png" />
-    </div>
-    <div class="my-work-div">
-      <img src="assets/img/sharky.png" />
-    </div>
-    <div class="my-work-div">
-      <img src="assets/img/sharky.png" />
-    </div>
-    <div class="my-work-div">
-      <img src="assets/img/sharky.png" />
-    </div>
-    <div class="my-work-div">
-      <img src="assets/img/sharky.png" />
+    <div
+      data-aos="fade-up"
+      *ngFor="let project of projects; let i = index"
+      class="my-work-div"
+    >
+      <div>
+        <img src="{{ project.image }}" />
+      </div>
     </div>
   </div>
 </div>

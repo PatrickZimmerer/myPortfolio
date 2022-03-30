@@ -10,7 +10,6 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutMeComponent } from './about-me/about-me.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +20,12 @@ import { AboutMeComponent } from './about-me/about-me.component';
     MyWorkComponent,
     AboutMeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatButtonModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatButtonModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

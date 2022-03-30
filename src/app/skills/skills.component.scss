@@ -48,3 +48,12 @@ h2 {
   font-size: 1.3rem;
   padding-top: 1rem;
 }
+[data-aos="custom-animation1"] {
+  transform: skewX(45deg);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: skewX(0);
+    opacity: 1;
+  }
+}

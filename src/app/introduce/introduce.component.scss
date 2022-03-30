@@ -24,7 +24,6 @@ h1 {
   color: #2dfcd8;
 }
 .img-container {
-  padding-top: 3rem;
   padding-right: 8.1rem;
 }
 .introduction-container {
@@ -44,8 +43,9 @@ h1 {
 }
 
 img {
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
   border-radius: 100%;
 }
 

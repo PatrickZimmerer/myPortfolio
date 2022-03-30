@@ -1,7 +1,11 @@
 <div class="skills-wrap bg-gray">
-  <h2>My Skills</h2>
+  <h2 data-aos="fade-left">My Skills</h2>
   <div class="skills-container">
-    <div *ngFor="let skill of skills; let i = index" class="skill-div">
+    <div
+      data-aos="custom-animation1"
+      *ngFor="let skill of skills; let i = index"
+      class="skill-div"
+    >
       <div class="icon-container">
         <img src="{{ skill.icon }}" class="icon" />
       </div>
