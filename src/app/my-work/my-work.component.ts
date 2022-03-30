@@ -21,6 +21,13 @@ export class MyWorkComponent implements OnInit {
       type: 'Angular',
     },
     {
+      image: 'assets/img/join.png',
+      title: 'Join',
+      description:
+        'Join is a simple kanban built with JavaScript (Group Project)',
+      type: 'Javascript',
+    },
+    {
       image: 'assets/img/pokedex.png',
       title: 'Pokedex',
       description: 'A Pokedex built with the PokeApi and JavaScript',
