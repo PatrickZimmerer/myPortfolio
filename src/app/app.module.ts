@@ -14,6 +14,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { MatInputModule } from '@angular/material/input';
     MyWorkComponent,
     AboutMeComponent,
     ContactMeComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
