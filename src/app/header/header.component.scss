@@ -19,6 +19,7 @@ img {
 a,
 a:visited,
 a:hover {
+  cursor: pointer;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   position: relative;

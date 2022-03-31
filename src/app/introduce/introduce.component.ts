@@ -3,13 +3,19 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-introduce',
   templateUrl: './introduce.component.html',
-  styleUrls: ['./introduce.component.scss']
+  styleUrls: ['./introduce.component.scss'],
 })
 export class IntroduceComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  toContactMe() {
+    document
+      .getElementById('contact-me')
+      .scrollIntoView({ behavior: 'smooth' });
   }
 
+  toMySkills() {
+    document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+  }
 }

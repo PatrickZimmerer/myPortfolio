@@ -1,9 +1,9 @@
 <div class="my-work-wrap">
   <h2 data-aos="fade-right">My Work</h2>
   <div data-aos="fade-up" class="button-bar">
-    <button class="from-center" mat-stroked-button>All</button>
-    <button class="from-center" mat-stroked-button>Angular</button>
-    <button class="from-center" mat-stroked-button>Java Script</button>
+    <button mat-stroked-button>All</button>
+    <button mat-stroked-button>Angular</button>
+    <button mat-stroked-button>Java Script</button>
   </div>
   <div class="my-work-container">
     <div
@@ -11,9 +11,14 @@
       *ngFor="let project of projects; let i = index"
       class="my-work-div"
     >
-      <div>
-        <img src="{{ project.image }}" />
+      <div class="hover-project">
+        <h3>{{ project.title }}</h3>
+        <span>{{ project.description }}</span>
+        <a href="{{ project.link }}">
+          <button mat-stroked-button>Try Out</button>
+        </a>
       </div>
+      <img src="{{ project.image }}" />
     </div>
   </div>
 </div>

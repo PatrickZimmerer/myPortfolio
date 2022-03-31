@@ -15,6 +15,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FooterComponent } from './footer/footer.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +28,8 @@ import { FooterComponent } from './footer/footer.component';
     AboutMeComponent,
     ContactMeComponent,
     FooterComponent,
+    ImprintComponent,
+    LegalNoticeComponent,
   ],
   imports: [
     BrowserModule,

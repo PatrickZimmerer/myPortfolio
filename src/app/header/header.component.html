@@ -1,9 +1,9 @@
 <header>
-  <img src="assets/img/logo.png" />
+  <img src="assets/img/logo.png" routerLink="/" />
   <div class="menu">
-    <a class="third after" href=""> HOME </a>
-    <a class="third after" href=""> SKILLS </a>
-    <a class="third after" href=""> PROJECTS </a>
-    <a class="third after" href=""> ABOUT </a>
+    <a class="third after" routerLink="/"> HOME </a>
+    <a class="third after" (click)="toMySkills()"> SKILLS </a>
+    <a class="third after" (click)="toMyWork()"> PROJECTS </a>
+    <a class="third after" (click)="toAboutMe()"> ABOUT </a>
   </div>
 </header>
