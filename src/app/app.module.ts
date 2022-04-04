@@ -20,6 +20,7 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MatMenuModule } from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +46,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

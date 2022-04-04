@@ -7,6 +7,7 @@
   max-width: 100%;
   min-height: 100vh;
   z-index: 1;
+  overflow: hidden;
 }
 .developer-container:hover {
   cursor: default;
@@ -200,18 +201,136 @@ img {
     padding: 3rem 0 0 6.1rem;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1110px) {
+  h1 {
+    font-size: 3.4rem;
+  }
   img {
     height: 280px;
     width: 280px;
   }
 }
-@media (max-width: 1100px) {
-  img {
-    height: 280px;
-    width: 280px;
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 3.2rem;
   }
+  img {
+    height: 250px;
+    width: 250px;
+  }
+  .introduction-wrap {
+    justify-content: center;
+  }
+  .img-container {
+    padding-right: 4rem;
+  }
+  .introduction-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0rem 1rem 0 4rem;
+  }
+  .button2 {
+    padding: 1.5rem 6rem;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .introduction-wrap {
+    justify-content: space-between;
+  }
+  .img-container {
+    padding-right: 3rem;
+  }
+  .introduction-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0rem 0 0 3rem;
+  }
+  .button2 {
+    padding: 1.5rem 6rem;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 830px) {
   h1 {
     font-size: 3.4rem;
+  }
+  .introduction-wrap {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 5rem 2rem 0;
+    width: auto;
+  }
+  .img-container {
+    padding-right: 0;
+  }
+  .introduction-container {
+    flex-direction: column;
+    text-align: start;
+    padding: 0;
+  }
+  .arrow-wrap {
+    display: none;
+  }
+  .button2 {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .introduction-wrap {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 4rem 1.5rem 0;
+  }
+}
+@media (max-width: 520px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .button2 {
+    margin-bottom: 0;
+    padding: 2rem 7rem;
+  }
+}
+@media (max-width: 500px) {
+  .introduction-wrap {
+    margin-bottom: -4rem;
+  }
+}
+@media (max-width: 440px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  img {
+    height: 200px;
+    width: 200px;
+  }
+  .introduction-wrap {
+    padding: 3rem 1rem 0;
+  }
+  .button2 {
+    padding: 1.5rem 6rem;
+  }
+}
+@media (max-width: 350px) {
+  .introduction-container {
+    text-align: center;
+  }
+  .button2 {
+    padding: 1rem 4.5rem;
+  }
+}
+@media (max-width: 300px) {
+  .button2 {
+    padding: 1rem 3.5rem;
   }
 }

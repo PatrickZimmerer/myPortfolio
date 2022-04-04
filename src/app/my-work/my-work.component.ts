@@ -32,8 +32,7 @@ export class MyWorkComponent implements OnInit {
     {
       image: 'assets/img/join.png',
       title: 'Join',
-      description:
-        'Join is a simple kanban built with JavaScript (Group Project)',
+      description: 'Join is a kanban built with JavaScript (Group Project)',
       type: 'Javascript',
       link: 'http://patrickzimmerer.de/Join/html/index.html',
     },
@@ -48,7 +47,7 @@ export class MyWorkComponent implements OnInit {
       image: 'assets/img/instagram.png',
       title: 'Insta Clone',
       description:
-        'A simple Instagram clone with a comment function (using local Storage)',
+        'A simple Instagram clone with a comment function (local Storage)',
       type: 'Javascript',
       link: 'http://patrickzimmerer.de/Instaclone/index.html',
     },
