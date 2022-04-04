@@ -315,7 +315,7 @@ img {
     width: 200px;
   }
   .introduction-wrap {
-    padding: 3rem 1rem 0;
+    padding: 0 1rem 0;
   }
   .button2 {
     padding: 1.5rem 6rem;
@@ -330,6 +330,9 @@ img {
   }
 }
 @media (max-width: 300px) {
+  .introduction-wrap {
+    padding: 2rem 1rem 0;
+  }
   .button2 {
     padding: 1rem 3.5rem;
   }

@@ -14,11 +14,25 @@
     </div>
     <nav class="nav" id="nav">
       <ul class="mobile-links">
-        <li><a class="third after" routerLink="/"> HOME </a></li>
-        <li><a class="third after" (click)="toMySkills()"> SKILLS </a></li>
-        <li><a class="third after" (click)="toMyWork()"> PROJECTS </a></li>
         <li>
-          <a class="third after" (click)="toAboutMe()"> ABOUT </a>
+          <a class="third after" (click)="menuOnClick()" routerLink="/">
+            HOME
+          </a>
+        </li>
+        <li>
+          <a class="third after" (click)="toMySkills(); menuOnClick()">
+            SKILLS
+          </a>
+        </li>
+        <li>
+          <a class="third after" (click)="toMyWork(); menuOnClick()">
+            PROJECTS
+          </a>
+        </li>
+        <li>
+          <a class="third after" (click)="toAboutMe(); menuOnClick()">
+            ABOUT
+          </a>
         </li>
       </ul>
     </nav>
