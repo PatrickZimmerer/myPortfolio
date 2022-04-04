@@ -66,3 +66,8 @@ a.before:hover:before,
 a.after:hover:after {
   width: 100%;
 }
+@media (max-width: 1300px) {
+  header {
+    padding: 1.5rem 6.1rem 0;
+  }
+}

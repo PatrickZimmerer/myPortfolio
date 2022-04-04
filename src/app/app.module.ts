@@ -17,6 +17,9 @@ import { MatInputModule } from '@angular/material/input';
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +33,7 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
     FooterComponent,
     ImprintComponent,
     LegalNoticeComponent,
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +43,8 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

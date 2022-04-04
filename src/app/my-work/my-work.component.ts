@@ -8,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class MyWorkComponent implements OnInit {
   projects = [
     {
+      image: 'assets/img/portfolio.png',
+      title: 'Portfolio',
+      description: 'My Portfolio built with Angular',
+      type: 'Angular',
+      link: 'http://patrickzimmerer.de',
+    },
+    {
       image: 'assets/img/sharky.png',
       title: 'Sharky',
       description: 'JavaScript based game (OOP)',
@@ -39,18 +46,18 @@ export class MyWorkComponent implements OnInit {
     },
     {
       image: 'assets/img/instagram.png',
-      title: 'Instagram',
+      title: 'Insta Clone',
       description:
         'A simple Instagram clone with a comment function (using local Storage)',
       type: 'Javascript',
-      link: 'http://patrickzimmerer.de/Instagram/index.html',
+      link: 'http://patrickzimmerer.de/Instaclone/index.html',
     },
     {
       image: 'assets/img/lieferando.png',
-      title: 'Lieferando',
+      title: 'Liefer Clone',
       description: 'A clone of the popular food delivery app',
       type: 'Javascript',
-      link: 'http://patrickzimmerer.de/Lieferando/index.html',
+      link: 'http://patrickzimmerer.de/Lieferclone/index.html',
     },
     {
       image: 'assets/img/quizapp.png',
@@ -60,7 +67,28 @@ export class MyWorkComponent implements OnInit {
       link: 'http://patrickzimmerer.de/Quizapp/index.html',
     },
   ];
+
+  filterdProjects = this.projects;
   constructor() {}
 
   ngOnInit(): void {}
+  showAll() {
+    document.getElementById('all-btn').classList.add('selected');
+    document.getElementById('angular-btn').classList.remove('selected');
+    document.getElementById('javascript-btn').classList.remove('selected');
+
+    this.filterdProjects = this.projects;
+  }
+  showAngular() {
+    document.getElementById('all-btn').classList.remove('selected');
+    document.getElementById('angular-btn').classList.add('selected');
+    document.getElementById('javascript-btn').classList.remove('selected');
+    this.filterdProjects = this.projects.filter((p) => p.type == 'Angular');
+  }
+  showJavascript() {
+    document.getElementById('all-btn').classList.remove('selected');
+    document.getElementById('angular-btn').classList.remove('selected');
+    document.getElementById('javascript-btn').classList.add('selected');
+    this.filterdProjects = this.projects.filter((p) => p.type == 'Javascript');
+  }
 }

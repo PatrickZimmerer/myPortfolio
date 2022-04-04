@@ -192,3 +192,26 @@ img {
     transform: rotate(45deg) translate(20px, 20px);
   }
 }
+@media (max-width: 1300px) {
+  .img-container {
+    padding-right: 6.1rem;
+  }
+  .introduction-container {
+    padding: 3rem 0 0 6.1rem;
+  }
+}
+@media (max-width: 1200px) {
+  img {
+    height: 280px;
+    width: 280px;
+  }
+}
+@media (max-width: 1100px) {
+  img {
+    height: 280px;
+    width: 280px;
+  }
+  h1 {
+    font-size: 3.4rem;
+  }
+}

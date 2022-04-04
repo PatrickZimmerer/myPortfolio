@@ -57,3 +57,17 @@ h2 {
     opacity: 1;
   }
 }
+[data-aos="custom-animation2"] {
+  transform: skewX(-45deg);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: skewX(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 1300px) {
+  .skills-wrap {
+    padding: 0 6.1rem;
+  }
+}

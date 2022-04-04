@@ -27,6 +27,10 @@ h2 {
     }
   }
 }
+.selected {
+  background-color: #fa2759;
+  color: #000000;
+}
 .my-work-wrap {
   background-color: #000000;
   padding: 0 8.1rem;
@@ -44,11 +48,11 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  width: 45%;
   margin: 1.5rem;
   img {
     max-width: 100%;
-    height: 23rem;
+    height: 25rem;
     border: 4px #1a1a1a solid;
     border-radius: 6px;
   }
@@ -100,6 +104,82 @@ h2 {
       background-color: #fa2759;
       color: #000000;
     }
+  }
+}
+@media (max-width: 1600px) {
+  .my-work-div {
+    img {
+      height: 22rem;
+    }
+  }
+}
+@media (max-width: 1500px) {
+  .my-work-div {
+    img {
+      height: 21rem;
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .my-work-div {
+    img {
+      height: 20rem;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .my-work-wrap {
+    padding: 0 6.1rem;
+  }
+}
+@media (max-width: 1200px) {
+  .button-bar {
+    margin-bottom: 2rem;
+    button {
+      width: 15%;
+    }
+  }
+  .my-work-div {
+    margin: 1rem 1rem;
+    width: 43%;
+    img {
+      height: 17rem;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .my-work-container {
+    justify-content: space-between;
+    padding-bottom: 4rem;
+  }
+  .my-work-div {
+    margin: 1rem 0;
+    width: 47%;
+    img {
+      height: 17rem;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .my-work-container {
+    justify-content: space-between;
+    padding-bottom: 4rem;
+  }
+  .my-work-div {
+    margin: 1rem 0;
+    width: 47%;
+    img {
+      height: 15rem;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .my-work-wrap {
+    background-color: #1a1a1a;
+    padding: 0 4.1rem;
+  }
+  .my-work-container {
+    padding-bottom: 2rem;
   }
 }
 //   .btn {
