@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsComponent implements OnInit {
   skills = [
     {
-      icon: 'assets/img/java script.png',
+      icon: 'assets/img/JavaScript.png',
       title: 'JavaScript',
     },
     {
@@ -36,7 +36,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       icon: 'assets/img/testautomation.png',
-      title: 'Test automation',
+      title: 'Test Automation',
     },
     {
       icon: 'assets/img/databases.png',

@@ -1,15 +1,15 @@
-<form method="POST">
+<form action="https://formspree.io/f/xlezworn" method="POST">
   <div class="contact-form">
-    <div class="form-field-container">
+    <div data-aos="fade-right" class="form-field-container">
       <p>Name</p>
-      <mat-form-field color="accent" data-aos="fade-right" appearance="outline">
+      <mat-form-field color="accent" appearance="outline">
         <mat-label>Name</mat-label>
         <input id="name" matInput placeholder="Enter your name" />
       </mat-form-field>
     </div>
-    <div class="form-field-container">
+    <div data-aos="fade-left" class="form-field-container">
       <p>Email Address</p>
-      <mat-form-field color="accent" data-aos="fade-left" appearance="outline">
+      <mat-form-field color="accent" appearance="outline">
         <mat-label>E-Mail</mat-label>
         <input
           id="e-mail"
@@ -20,9 +20,9 @@
         />
       </mat-form-field>
     </div>
-    <div class="form-field-container">
+    <div data-aos="fade-right" class="form-field-container">
       <p>Message</p>
-      <mat-form-field color="accent" data-aos="fade-right" appearance="outline">
+      <mat-form-field color="accent" appearance="outline">
         <mat-label>Message</mat-label>
         <textarea
           id="message"
@@ -33,6 +33,7 @@
       </mat-form-field>
     </div>
     <button
+      data-aos="zoom-out-up"
       (click)="submit()"
       type="submit"
       class="from-center"

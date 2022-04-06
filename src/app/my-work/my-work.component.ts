@@ -12,14 +12,14 @@ export class MyWorkComponent implements OnInit {
       title: 'Portfolio',
       description: 'My Portfolio built with Angular',
       type: 'Angular',
-      link: 'http://patrickzimmerer.de',
+      link: 'https://patrickzimmerer.de',
     },
     {
       image: 'assets/img/sharky.png',
       title: 'Sharky',
       description: 'JavaScript based game (OOP)',
       type: 'Javascript',
-      link: 'http://patrickzimmerer.de/Sharkie/index.html',
+      link: 'https://patrickzimmerer.de/Sharkie/index.html',
     },
     {
       image: 'assets/img/ringoffire.png',
@@ -34,14 +34,14 @@ export class MyWorkComponent implements OnInit {
       title: 'Join',
       description: 'Join is a kanban built with JavaScript (Group Project)',
       type: 'Javascript',
-      link: 'http://patrickzimmerer.de/Join/html/index.html',
+      link: 'https://patrickzimmerer.de/Join/html/index.html',
     },
     {
       image: 'assets/img/pokedex.png',
       title: 'Pokedex',
       description: 'A Pokedex built with the PokeApi and JavaScript',
       type: 'Javascript',
-      link: 'http://patrickzimmerer.de/Pokedex/index.html',
+      link: 'https://patrickzimmerer.de/Pokedex/index.html',
     },
     {
       image: 'assets/img/instagram.png',
@@ -49,21 +49,21 @@ export class MyWorkComponent implements OnInit {
       description:
         'A simple Instagram clone with a comment function (local Storage)',
       type: 'Javascript',
-      link: 'http://patrickzimmerer.de/Instaclone/index.html',
+      link: 'https://patrickzimmerer.de/Instaclone/index.html',
     },
     {
       image: 'assets/img/lieferando.png',
       title: 'Liefer Clone',
       description: 'A clone of the popular food delivery app',
       type: 'Javascript',
-      link: 'http://patrickzimmerer.de/Lieferclone/index.html',
+      link: 'https://patrickzimmerer.de/Lieferclone/index.html',
     },
     {
       image: 'assets/img/quizapp.png',
       title: 'Quizapp',
       description: 'A simple quiz game built with Javascript',
-      type: 'Javascript',
-      link: 'http://patrickzimmerer.de/Quizapp/index.html',
+      type: 'JavaScript',
+      link: 'https://patrickzimmerer.de/Quizapp/index.html',
     },
   ];
 
@@ -75,7 +75,6 @@ export class MyWorkComponent implements OnInit {
     document.getElementById('all-btn').classList.add('selected');
     document.getElementById('angular-btn').classList.remove('selected');
     document.getElementById('javascript-btn').classList.remove('selected');
-
     this.filterdProjects = this.projects;
   }
   showAngular() {

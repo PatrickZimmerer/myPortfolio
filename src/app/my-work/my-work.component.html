@@ -1,6 +1,6 @@
 <div class="my-work-wrap">
   <h2 data-aos="fade-right">My Work</h2>
-  <div data-aos="fade-up" class="button-bar">
+  <div data-aos="zoom-in-up" class="button-bar">
     <button
       class="selected"
       id="all-btn"
@@ -19,7 +19,7 @@
 
   <div class="my-work-container">
     <ng-container *ngFor="let project of filterdProjects; let i = index">
-      <div data-aos="fade-up" class="my-work-div">
+      <div data-aos="zoom-out-up" class="my-work-div">
         <div class="hover-project">
           <h3>{{ project.title }}</h3>
           <span>{{ project.description }}</span>
