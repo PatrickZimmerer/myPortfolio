@@ -321,7 +321,10 @@ img {
     padding: 1.5rem 6rem;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 360px) {
+  .introduction-wrap {
+    padding: 2rem 1rem 0;
+  }
   .introduction-container {
     text-align: center;
   }
@@ -329,11 +332,17 @@ img {
     padding: 1rem 4.5rem;
   }
 }
-@media (max-width: 300px) {
-  .introduction-wrap {
-    padding: 2rem 1rem 0;
+@media (max-width: 330px) {
+  img {
+    height: 180px;
+    width: 180px;
   }
   .button2 {
     padding: 1rem 3.5rem;
+  }
+}
+@media (max-width: 300px) {
+  .button2 {
+    padding: 1rem 3rem;
   }
 }
